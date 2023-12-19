@@ -3,7 +3,7 @@ import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
 // Add this import:
-// import { loadRemoteModule } from '@angular-architects/native-federation';
+import { loadRemoteModule } from '@angular-architects/native-federation';
 
 export const APP_ROUTES: Routes = [
   {
@@ -13,11 +13,11 @@ export const APP_ROUTES: Routes = [
   },
 
   // Add this route:
-  // {
-  //   path: 'flights',
-  //   loadComponent: () =>
-  //     loadRemoteModule('mfe', './Component').then((m) => m.AppComponent),
-  // },
+  {
+    path: 'flights',
+    loadComponent: () =>
+      loadRemoteModule('mfe', './Component').then((m) => m.AppComponent),
+  },
 
   {
     path: '**',
