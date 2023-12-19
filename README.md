@@ -14,3 +14,6 @@ ng add @angular-architects/native-federation --project host --port 4200 --type d
 ng serve host -o
 
 npm run build
+
+## deployed application
+https://host-native-123456789.netlify.app/
