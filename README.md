@@ -10,4 +10,4 @@ ng g application host --routing --style=scss
 
 ng serve host -o
 
-ng add @angular-architects/native-federation --project host-native-app --port 4200 --type dynamic-host
+ng add @angular-architects/native-federation --project host --port 4200 --type dynamic-host
